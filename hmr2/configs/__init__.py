@@ -1,8 +1,13 @@
 import os
 from typing import Dict
 from yacs.config import CfgNode as CN
+from pathlib import Path
 
-CACHE_DIR = os.path.join(os.environ.get("HOME"), ".cache")
+# Define the project root directory
+project_root = Path(__file__).parent.parent.parent
+
+# Define the cache directory within the project root
+CACHE_DIR = os.path.join(str(project_root), ".cache")
 CACHE_DIR_4DHUMANS = os.path.join(CACHE_DIR, "4DHumans")
 
 def to_lower(x: Dict) -> Dict:

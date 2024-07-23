@@ -1,7 +1,7 @@
 # @package _global_
 
 SMPL:
-  DATA_DIR: ${oc.env:HOME}/.cache/4DHumans/data/
+  DATA_DIR: ../../../../.cache/4DHumans/data
   MODEL_PATH: ${SMPL.DATA_DIR}/smpl
   GENDER: neutral
   NUM_BODY_JOINTS: 23
